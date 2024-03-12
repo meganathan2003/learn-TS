@@ -64,7 +64,19 @@ class Point {
     x: number;
     y: number;
     z: number;
-    draw = (): any => {
+
+    /**
+     * Below the code for constructor in TS
+     * 
+     */
+    constructor(x: number, y: number, z: number) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+
+    }
+    // Acess modifier
+   private draw = (): any => {
         console.log(this.x);
 
     }
@@ -72,6 +84,6 @@ class Point {
         draw()
     }
 }
-let Shape: Point = new Point(); // this create a new obj i means create a new memory
-Shape.x = 
-Shape.draw();
+// let Shape: Point = new Point();// this create a new obj i means create a new memory
+// Shape.x = Shape.draw()   ;
+
